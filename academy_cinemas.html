@@ -132,6 +132,16 @@
   </div>
 </div>
 <!--END SHOW TIMES-->
+<!--Deals-->
+
+<div class="jumbotron text-center container">
+  <h1 class="display-3">Movie Deals</h1>
+  <p class="lead text-center">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p class="text-center">Check out our monthly deals.</p>
+    <a class="btn btn-info btn-lg" href="#" role="button">See out movie deals!</a>
+  </p>
+</div>
 
 <!--EMAIL FORM-->
         <div id="Deals"           
@@ -141,7 +151,9 @@
                     <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie rewards!">
+                      Submit
+                    </button>
                 </form>
             </div>
         </div>
@@ -166,5 +178,18 @@
 
 
         </div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-<!--END FOOTER NAV-->
+<!--jQuery-->
+<script>
+
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+
+</script>
+</body>
+</html>
