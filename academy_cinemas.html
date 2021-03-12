@@ -136,16 +136,16 @@
 
 <div class="jumbotron text-center container">
   <h1 class="display-3">Movie Deals</h1>
-  <p class="lead text-center">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <p class="lead text-center"></p>
   <hr class="my-4">
   <p class="text-center">Check out our monthly deals.</p>
-    <a class="btn btn-info btn-lg" href="#" role="button">See out movie deals!</a>
+  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">Get Movie Deals</button>
   </p>
 </div>
 
 <!--EMAIL FORM-->
         <div id="Deals"           
-            <div class="text-center">
+            <div class="text-center container">
                 <form>
                     <h1 class="text-primary my-5">Sign up for movie club rewards!</h1>
                     <div class="form-group">
@@ -158,6 +158,51 @@
             </div>
         </div>
 <!--END EMAIL FORM-->
+
+<!--Form modal-->
+<div class="modal fade" id="register">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Sign up for movie deals</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="example-text-input" class="col-2 col-form-label">First Name</label>
+          <div class="col-10">
+            <input class="form-control" type="text" value="" id="example-text-input">
+          </div>
+        </div>
+          <div class="form-group">
+            <label for="example-text-input" class="col-2 col-form-label">Last Name</label>
+            <div class="col-10">
+              <input class="form-control" type="text" value="" id="example-text-input">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="example-email-input" class="col-2 col-form-label">Email</label>
+          <div class="col-10">
+            <input class="form-control" type="email" value="" id="example-email-input">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="example-password-input" class="col-2 col-form-label">Password</label>
+          <div class="col-10">
+            <input class="form-control" type="password" value="" id="example-password-input">
+          </div>
+        </div>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!--FOOTER NAV-->
         <div class="container my-5">
